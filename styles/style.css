@@ -1,0 +1,118 @@
+:root {
+  --header-color-1: #8890b1;
+  --header-color-2: #3adac5;
+  --footer-color-1: #839d79;
+  --footer-color-2: #785671;
+  --border-color: black;
+  --link-color: #30e740;
+  --hover-color: purple;
+}
+
+body {
+  background-image: url("../images/back.jpg");
+  font-size: 16px;
+  color: var(--border-color);
+  line-height: 1;
+}
+
+.header,
+.footer {
+  border: 2px solid var(--border-color);
+}
+
+.header {
+  background: linear-gradient(
+    to right,
+    var(--header-color-1),
+    var(--header-color-2)
+  );
+  border-radius: 340px;
+  border: 2px solid var(--border-color);
+}
+
+.header nav {
+  text-align: left;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.header > nav > ul {
+  color: rebeccapurple;
+}
+
+.header nav a:hover {
+  color: var(--hover-color);
+  text-decoration: underline;
+}
+
+.header nav a:focus {
+  outline: 2px solid var(--border-color);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+h1 + p {
+  font-size: 16px;
+}
+
+p::first-letter {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.hobbies li:nth-child(odd) {
+  text-decoration: underline;
+}
+
+.hobbies li:first-child {
+  color: red;
+}
+
+.hobbies li:hover {
+  font-weight: bold;
+}
+
+.hobbies li::selection {
+  background-color: white;
+  color: red;
+}
+
+.hobbies li::after {
+  content: " !";
+}
+
+.form input:checked {
+  accent-color: purple;
+}
+
+.form input:required {
+  border: 2px solid purple;
+}
+
+.footer {
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    var(--footer-color-1),
+    var(--footer-color-2)
+  );
+  border-radius: 10px;
+  border: 2px solid var(--border-color);
+}
+
+/* Цей селектор має найбільшу специфічність - (1, 2, 2) */
+#form-element .form label + input:focus {
+  outline: 1px solid var(--border-color);
+}
