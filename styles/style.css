@@ -116,3 +116,32 @@ h2 {
 #form-element .form label + input:focus {
   outline: 1px solid var(--border-color);
 }
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.header .nav-link a {
+  color: black;
+}
+
+.header .nav-link a:hover {
+  color: white;
+}
+
+.list {
+  font-weight: bold;
+}
+
+.all-sum {
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+}
+
+main section {
+  margin-bottom: 30px;
+}
