@@ -120,6 +120,7 @@ h2 {
 table {
   text-align: center;
   border-collapse: collapse;
+  border: 2px solid var(--border-color);
 }
 
 .header .nav-link a {
@@ -142,6 +143,6 @@ table {
   font-weight: bold;
 }
 
-main section {
+main div {
   margin-bottom: 30px;
 }
