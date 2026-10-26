@@ -122,6 +122,11 @@ table {
   border: 2px solid var(--border-color);
 }
 
+th, td {
+  border-collapse: collapse;
+  border: 2px solid var(--border-color);
+}
+
 .header .nav-link a {
   color: black;
 }
