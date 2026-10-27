@@ -1,0 +1,212 @@
+:root {
+  --header-color-1: #8890b1;
+  --header-color-2: #3adac5;
+  --footer-color-1: #839d79;
+  --footer-color-2: #785671;
+  --border-color: black;
+  --link-color: #30e740;
+  --hover-color: purple;
+}
+
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/back.jpg");
+  font-size: 16px;
+  color: var(--border-color);
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+}
+
+.image {
+  padding-top: 20px;
+}
+
+.header,
+.footer {
+  border: 2px solid var(--border-color);
+}
+
+.header {
+  background: linear-gradient(
+    to right,
+    var(--header-color-1),
+    var(--header-color-2)
+  );
+  border-radius: 340px;
+  border: 2px solid var(--border-color);
+  margin: 20px;
+  padding: 20px;
+}
+
+.header nav {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: var(--link-color);
+  margin-left: 0;
+}
+
+.header > nav > ul {
+  color: rgb(0, 0, 0);
+}
+
+.header nav a:hover {
+  color: var(--hover-color);
+  text-decoration: underline;
+  padding: 2px;
+}
+
+.header nav a:focus {
+  outline: 2px solid var(--border-color);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+h1 + p {
+  font-size: 16px;
+}
+
+p::first-letter {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  padding: 20px;
+}
+
+.hobbies li:nth-child(odd) {
+  text-decoration: underline;
+}
+
+.hobbies li:first-child {
+  color: red;
+}
+
+.hobbies li:hover {
+  font-weight: bold;
+}
+
+.hobbies li::selection {
+  background-color: white;
+  color: red;
+}
+
+.hobbies li::after {
+  content: " !";
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form label {
+  display: inline-block;
+  margin: 12px 0 6px;
+}
+
+.form input[type="checkbox"],
+.form input[type="radio"],
+.form input[type="range"] {
+  margin: 8px 6px;
+}
+
+.form legend {
+  padding: 0 8px;
+}
+
+.form button {
+  margin: 8px 8px 0 0;
+  padding: 10px 18px;
+}
+
+.form button {
+  display: inline-block;
+}
+
+.form input:checked {
+  accent-color: purple;
+}
+
+.form input:required {
+  border: 2px solid purple;
+}
+
+.footer {
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    var(--footer-color-1),
+    var(--footer-color-2)
+  );
+  border-radius: 10px;
+  border: 2px solid var(--border-color);
+  padding: 6px;
+  margin: 20px;
+}
+
+/* Цей селектор має найбільшу специфічність - (1, 2, 2) */
+#form-element .form label + input:focus {
+  outline: 1px solid var(--border-color);
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid var(--border-color);
+  margin: 30px 2px;
+  padding: auto;
+}
+
+th,
+td {
+  border: 1px solid var(--border-color);
+  padding: 8px 12px;
+}
+
+.header .nav-link a {
+  color: black;
+}
+
+.header .nav-link a:hover {
+  color: white;
+}
+
+.list {
+  font-weight: bold;
+}
+
+.all-sum {
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+}
+
+main div {
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
