@@ -7,6 +7,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles/style.css" />
 
     <title>My web site</title>
@@ -14,23 +20,25 @@
 
   <body>
     <header class="header">
-      <nav class="nav-link">
-        <ul>
-          <li><a href="../index.html">Головна</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="nav-link">
+          <ul>
+            <li><a href="../index.html">Головна</a></li>
+          </ul>
+        </nav>
 
-      <nav>
-        <ul>
-          <li><a href="#prise-list">Прайс-лист</a></li>
-          <li><a href="#product-categories">Категорії товарів</a></li>
-          <li><a href="#competition-results">Результати змагань</a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li><a href="#prise-list">Прайс-лист</a></li>
+            <li><a href="#product-categories">Категорії товарів</a></li>
+            <li><a href="#competition-results">Результати змагань</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <div>
+      <div class="container">
         <table id="list">
           <caption class="title">
             Прайс-лист
@@ -80,7 +88,7 @@
         </table>
       </div>
 
-      <div>
+      <div class="container">
         <table id="product-categories">
           <caption class="title">
             Категорії товарів
@@ -121,7 +129,7 @@
         </table>
       </div>
 
-      <div>
+      <div class="container">
         <table id="competition-results">
           <caption class="title">
             Результати змагань
@@ -176,12 +184,14 @@
     </main>
 
     <footer class="footer">
-      <address>
-        <a href="mailto:andriu.yakobishin@gmail.com"
-          >andriu.yakobishin@gmail.com</a
-        >
-        <a href="tel:+380982338760">+380982338760</a>
-      </address>
+      <div class="container">
+        <address>
+          <a href="mailto:andriu.yakobishin@gmail.com"
+            >andriu.yakobishin@gmail.com</a
+          >
+          <a href="tel:+380982338760">+380982338760</a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
