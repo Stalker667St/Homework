@@ -31,6 +31,7 @@ body {
 .header,
 .footer {
   border: 2px solid var(--border-color);
+  padding: 4px;
 }
 
 .header {
@@ -41,19 +42,17 @@ body {
   );
   border-radius: 340px;
   border: 2px solid var(--border-color);
-  margin: 20px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .header nav {
   text-align: left;
-  margin-bottom: 10px;
 }
 
 .header nav a {
   text-decoration: none;
   color: var(--link-color);
-  margin-left: 0;
+  padding: 2px;
 }
 
 .header > nav > ul {
@@ -63,7 +62,6 @@ body {
 .header nav a:hover {
   color: var(--hover-color);
   text-decoration: underline;
-  padding: 2px;
 }
 
 .header nav a:focus {
@@ -159,8 +157,6 @@ h2 {
   );
   border-radius: 10px;
   border: 2px solid var(--border-color);
-  padding: 6px;
-  margin: 20px;
 }
 
 /* Цей селектор має найбільшу специфічність - (1, 2, 2) */
@@ -209,4 +205,8 @@ main div {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.border-none {
+  border-style: none;
 }
