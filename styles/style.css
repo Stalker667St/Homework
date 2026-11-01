@@ -25,13 +25,13 @@ body {
 }
 
 .image {
-  margin: 20px;
+  margin-top: 20px;
 }
 
 .header,
 .footer {
   border: 2px solid var(--border-color);
-  margin-block: 10px;
+  padding-top: 4px;
 }
 
 .header {
@@ -46,22 +46,16 @@ body {
 
 .header nav {
   text-align: left;
-  margin: 10px 0;
 }
 
 .header nav a {
   text-decoration: none;
   color: var(--link-color);
-  margin: 0;
-}
-
-.header > nav > ul {
-  color: rgb(0, 0, 0);
-  list-style-position: inside;
 }
 
 .header nav li {
-  margin-bottom: 8px;
+  margin-top: 10px;
+  margin-left: 26px;
 }
 
 .header nav a:hover {
@@ -80,7 +74,6 @@ a:hover {
 
 h1 + p {
   font-size: 16px;
-  margin: 10px 20px;
 }
 
 p {
@@ -96,16 +89,23 @@ h1,
 h2 {
   text-align: center;
   text-decoration: underline;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .hobbies {
-  margin: 20px;
+  margin-left: 20px;
+}
+
+.hobbies li {
+  margin-top: 6px;
 }
 
 .hobbies li:nth-child(odd) {
   text-decoration: underline;
-  margin: 12px 0;
+}
+
+.header nav li:last-child {
+  margin-bottom: 0;
 }
 
 .hobbies li:first-child {
@@ -176,19 +176,22 @@ td {
 
 .container {
   width: 1400px;
-  margin: 0 auto;
+  margin: 0 10px;
+  padding: 0 40px;
 }
 
 .border-none {
   border-style: none;
 }
 
-section .container {
+section {
   padding: 20px 0;
 }
 
 .contacts {
-  justify-content: center;
-  gap: 50px;
-  display: flex;
+  text-align: center;
+}
+
+.contacts a:first-child{
+  margin-right: 20px;
 }
