@@ -31,7 +31,6 @@ body {
 .header,
 .footer {
   border: 2px solid var(--border-color);
-  padding-top: 4px;
 }
 
 .header {
@@ -53,8 +52,11 @@ body {
   color: var(--link-color);
 }
 
-.header nav li {
-  margin-top: 10px;
+nav li {
+  margin-bottom: 4px;
+}
+
+.header nav ul {
   margin-left: 26px;
 }
 
@@ -176,7 +178,7 @@ td {
 
 .container {
   width: 1400px;
-  margin: 0 10px;
+  margin: 0 auto;
   padding: 0 40px;
 }
 
