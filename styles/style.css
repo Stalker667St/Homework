@@ -79,9 +79,6 @@ p {
   padding-left: 10px;
 }
 
-.hobbies-tittle {
-  margin-bottom: 10px;
-}
 p::first-letter {
   font-size: 20px;
   font-weight: bold;
@@ -94,12 +91,18 @@ h2 {
   margin-bottom: 10px;
 }
 
+.hobbies-tittle {
+  margin-bottom: 10px;
+}
+
 .hobbies {
   padding-left: 10px;
+  margin-bottom: 50px;
 }
 
 .hobbies li {
   margin-bottom: 10px;
+  
 }
 
 .hobbies li:first-child {
@@ -109,10 +112,6 @@ h2 {
 
 .hobbies li:nth-child(odd) {
   text-decoration: underline;
-}
-
-.hobbies li:last-child {
-  margin-bottom: 50px;
 }
 
 .header nav li:last-child {
