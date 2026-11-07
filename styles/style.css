@@ -24,7 +24,6 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-
 .header,
 .footer {
   border: 2px solid var(--border-color);
@@ -91,6 +90,10 @@ h2 {
   margin-bottom: 10px;
 }
 
+.header nav li:last-child {
+  margin-bottom: 0;
+}
+
 .hobbies-tittle {
   margin-bottom: 10px;
 }
@@ -102,8 +105,12 @@ h2 {
 
 .hobbies li {
   margin-bottom: 10px;
-  
 }
+
+.hobbies li:last-child {
+  margin-bottom: 0;
+}
+
 
 .hobbies li:first-child {
   margin-top: 0;
@@ -112,10 +119,6 @@ h2 {
 
 .hobbies li:nth-child(odd) {
   text-decoration: underline;
-}
-
-.header nav li:last-child {
-  margin-bottom: 0;
 }
 
 .hobbies li:hover {
