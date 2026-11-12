@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <title>My web site</title>
   </head>
+
   <body>
     <header class="header">
       <div class="container">
@@ -59,18 +60,20 @@
             <li>Перегляд аніме</li>
           </ul>
 
-          <img
-            class="image"
-            alt="Похід на гору Шпиці"
-            height="400"
-            src="images/photo.jpg"
-            width="320"
-          />
-          <p>Один з наших походів.</p>
-          <p>
-            Це ми з другом піднімалися на гору Шпиці. Нам подобається
-            подорожувати та милуватися красивими краєвидами.
-          </p>
+          <div class="photo-wrapper">
+            <img
+              class="image"
+              alt="Похід на гору Шпиці"
+              height="400"
+              src="images/photo.jpg"
+              width="320"
+            />
+            <p class="photo-caption">Один з наших походів.</p>
+            <p>
+              Це ми з другом піднімалися на гору Шпиці. Нам подобається
+              подорожувати та милуватися красивими краєвидами.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -96,5 +99,7 @@
         </address>
       </div>
     </footer>
+
+    <a href="#" class="scroll-top">↑</a>
   </body>
 </html>
