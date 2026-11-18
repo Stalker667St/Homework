@@ -154,6 +154,9 @@ h2 {
 
 .hobbies li {
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
 }
 
 .hobbies li:last-child {
