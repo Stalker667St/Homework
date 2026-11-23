@@ -51,9 +51,7 @@ body {
   width: 320px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: end;
-  order: 2;
 }
 
 /* ABSOLUTE */
@@ -62,8 +60,6 @@ body {
   top: 10px;
   right: 10px;
   padding-left: 0;
-  display: inline;
-  align-self: center;
 }
 
 /* FIXED */
@@ -75,16 +71,15 @@ body {
   height: 40px;
   border: 1px solid black;
   border-radius: 30px;
-  text-align: center;
+  align-items: center;
   text-decoration: none;
-  line-height: 36px;
   color: #0c9764;
   display: flex;
   justify-content: center;
 }
 
 .header nav {
-  text-align: left;
+  padding: 10px 20px;
 }
 
 .header nav a {
@@ -92,12 +87,18 @@ body {
   color: var(--link-color);
 }
 
-nav li {
-  margin-bottom: 4px;
+.header nav li {
+  margin: 0;
 }
 
 .header nav ul {
-  padding-left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px 25px;
+  padding: 0;
+  list-style: none;
 }
 
 .header nav a:hover {
@@ -152,10 +153,7 @@ h2 {
   gap: 50px;
 }
 
-.hobbies li {
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: row;
+.hobbies li { 
   flex-grow: 1;
 }
 
@@ -250,11 +248,6 @@ section {
 
 .contacts {
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: space-evenly;
-}
-
-.contacts a:first-child {
-  margin-right: 20px;
+  justify-content: center;
+  gap: 20px;
 }
